@@ -136,6 +136,7 @@ def main():
     accuracy_logreg, scores_logreg, y_pred_logreg = logisticRegression(train_data, y_train, test_data, y_test)
     accuracy_knn, scores_knn, y_pred_knn = kNearestNeighbour(train_data, y_train, test_data, y_test, 9)
     accuracy_svm, scores_svm, y_pred_svm = supportVectorMachine(train_data, y_train, test_data, y_test)
+    #SVM takes a very long time to run
 
     #Plotting confusion matrices
     confusionMatrix(y_test, y_pred_logreg) #Logistic Regression
